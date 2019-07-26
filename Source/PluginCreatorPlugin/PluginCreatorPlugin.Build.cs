@@ -3,7 +3,7 @@ using System.IO;
  
 public class PluginCreatorPlugin : ModuleRules
 {
-    public PluginCreatorPlugin(TargetInfo Target)
+    public PluginCreatorPlugin(ReadOnlyTargetRules Target) : base(Target)
     {
         PrivateIncludePaths.AddRange(new string[] { "PluginCreatorPlugin/Private", "PluginCreatorPlugin/Private/UI", "PluginCreatorPlugin/Private/Helpers"  });
 
